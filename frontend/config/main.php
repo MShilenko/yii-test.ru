@@ -36,14 +36,30 @@ return [
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
-        /*
-        'urlManager' => [
+		'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
+                'news' => 'test/index',
+                'news/<id:.*>' => 'test/view',
+                
             ],
         ],
-        */
+        'stringHelper' => [
+            'class' => 'frontend\components\StringHelper',
+        ],
+       /* 'mailer' => [
+            'class' => 'yii\swiftmailer\Mailer',
+            'useFileTransport' => false,
+            'transport' => [
+                'class' => 'Swift_SmtpTransport',
+                'host' => 'smtp.gmail.com',
+                'username' => 'test.php.up@gmail.com',
+                'password' => '',
+                'port' => '587',
+                'encryption' => 'tls',
+            ],
+        ],*/
     ],
     'params' => $params,
 ];
