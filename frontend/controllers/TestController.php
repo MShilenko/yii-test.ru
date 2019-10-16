@@ -27,13 +27,11 @@ class TestController extends Controller
     public function actionMail()
     {
         $result = Yii::$app->mailer->compose()
-                ->setFrom('test.php.up@gmail.com')
-                ->setTo('test.php.up@gmail.com')
+                ->setFrom('shilenkomihail1987@gmail.com')
+                ->setTo('shilenkomihail1987@gmail.com')
                 ->setSubject('Тема сообщения')
                 ->setTextBody('Текст сообщения')
                 ->setHtmlBody('<b>текст сообщения в формате HTML</b>')
                 ->send();
-        var_dump($result);
-        die;
     }
 }

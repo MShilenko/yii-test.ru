@@ -46,20 +46,20 @@ return [
             ],
         ],
         'stringHelper' => [
-            'class' => 'frontend\components\StringHelper',
+            'class' => 'common\components\StringHelper',
         ],
-       /* 'mailer' => [
+        'mailer' => [
             'class' => 'yii\swiftmailer\Mailer',
             'useFileTransport' => false,
             'transport' => [
                 'class' => 'Swift_SmtpTransport',
                 'host' => 'smtp.gmail.com',
-                'username' => 'test.php.up@gmail.com',
-                'password' => '',
+                'username' => 'shilenkomihail1987@gmail.com',
+                'password' => '21111987smp',
                 'port' => '587',
                 'encryption' => 'tls',
             ],
-        ],*/
+        ],
     ],
     'params' => $params,
 ];

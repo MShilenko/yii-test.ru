@@ -1,5 +1,5 @@
 <?php
-namespace frontend\components;
+namespace common\components;
 use Yii;
 /**
  * Description of StringHelper
