@@ -1,5 +1,5 @@
 <?php
 return [
-    'adminEmail' => 'admin@example.com',
+    'adminEmail' => 'shilenkomihail1987@gmail.com',
         'shortTextLimit' => 40,
 ];

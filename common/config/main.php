@@ -1,5 +1,6 @@
 <?php
 return [
+	'language' => 'ru-RU', // <- здесь!
     'aliases' => [
         '@bower' => '@vendor/bower-asset',
         '@npm'   => '@vendor/npm-asset',
