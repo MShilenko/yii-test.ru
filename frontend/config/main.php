@@ -63,4 +63,7 @@ return [
         ],
     ],
     'params' => $params,
+    'aliases' => [
+		'@my_themes' => '/frontend/views/themes/',
+    ],
 ];
