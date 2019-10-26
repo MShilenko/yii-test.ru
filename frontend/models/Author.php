@@ -26,14 +26,15 @@ class Author extends \yii\db\ActiveRecord
     /**
      * {@inheritdoc}
      */
-    //~ public function rules()
-    //~ {
-        //~ return [
-            //~ [['birthdate'], 'safe'],
-            //~ [['rating'], 'integer'],
-            //~ [['first_name', 'last_name'], 'string', 'max' => 255],
-        //~ ];
-    //~ }
+    public function rules()
+    {
+        return [
+			[['first_name', 'last_name'], 'required'],
+            [['birthdate'], 'date', 'format' => 'php:Y-m-d'],
+            [['rating'], 'integer'],
+            [['first_name', 'last_name'], 'string', 'max' => 25],
+        ];
+    }
 
     /**
      * {@inheritdoc}

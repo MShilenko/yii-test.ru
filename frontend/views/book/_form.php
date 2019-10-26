@@ -1,6 +1,6 @@
 <?php
 /* @var $this yii\web\View */
-/* @var $book frontend\models\Book */
+/* @var $model frontend\models\Book */
 /* @var $publishers frontend\models\Publisher */
 
 use yii\helpers\Html;
@@ -12,9 +12,9 @@ use dosamigos\datepicker\DatePicker;
 
 $form = ActiveForm::begin();
 
-	echo $form->field($book, 'name');
-	echo $form->field($book, 'isbn');
-	echo $form->field($book, 'date_published')->widget(
+	echo $form->field($model, 'name');
+	echo $form->field($model, 'isbn');
+	echo $form->field($model, 'date_published')->widget(
     DatePicker::className(), [
         // inline too, not bad
          'inline' => true, 
@@ -26,7 +26,7 @@ $form = ActiveForm::begin();
             'format' => 'yyyy-mm-dd'
         ]
 	]);
-	echo $form->field($book, 'publisher_id')->dropDownList($publishers);
+	echo $form->field($model, 'publisher_id')->dropDownList($publishers);
 	echo HTML::submitButton('save', [
 		'class' => 'btn btn-primary'
 	]);
