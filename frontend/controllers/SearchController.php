@@ -22,8 +22,6 @@ class SearchController extends \yii\web\Controller
 			'results' => $results,
         ]);
     }
-<<<<<<< HEAD
-=======
     
     public function actionAdvanced()
     {
@@ -40,6 +38,5 @@ class SearchController extends \yii\web\Controller
 			'results' => $results,
         ]);
     }
->>>>>>> 85bb3c34fad58972478aa91b0d8526169f492800
 
 }
