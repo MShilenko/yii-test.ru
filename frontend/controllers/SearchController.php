@@ -22,5 +22,24 @@ class SearchController extends \yii\web\Controller
 			'results' => $results,
         ]);
     }
+<<<<<<< HEAD
+=======
+    
+    public function actionAdvanced()
+    {
+		$model = new SearchForm();
+		$results = null;
+		
+		
+		if($model->load(Yii::$app->request->post())){
+			$results = $model->searchAdvanced();
+		}
+		
+        return $this->render('advanced', [
+			'model' => $model,
+			'results' => $results,
+        ]);
+    }
+>>>>>>> 85bb3c34fad58972478aa91b0d8526169f492800
 
 }
