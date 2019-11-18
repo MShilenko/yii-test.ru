@@ -5,8 +5,9 @@ namespace frontend\controllers;
 use Yii;
 use frontend\models\Author;
 use frontend\controllers\behaviors\AccessBehavior;
+use \yii\web\Controller;
 
-class AuthorController extends \yii\web\Controller
+class AuthorController extends Controller
 {
 	public function behaviors(){
 		return [
