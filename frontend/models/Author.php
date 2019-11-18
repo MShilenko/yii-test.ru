@@ -49,4 +49,10 @@ class Author extends \yii\db\ActiveRecord
             'rating' => 'Rating',
         ];
     }
+    
+    public function beforeValidate(){
+		$this->first_name = strip_tags($this->first_name);
+		$this->last_name = strip_tags($this->last_name);
+		return parent::beforeValidate();
+	}
 }
